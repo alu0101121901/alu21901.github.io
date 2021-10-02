@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #151515;
+  padding-bottom: "4vh";
+}
+
+.presentation {
+  padding-top: 4vh;
+  font-family: 'Anton', sans-serif;
+  font-size: 8.7vh;
+}
+
+
+.animated {
+  text-decoration: none;
+  background: linear-gradient(to right, #B4A5A5 50%, #ED6663 50%);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+.animated:hover {
+  background-position: -100%;
+}
+
+.portf-menu {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 4vh;
+  min-height: 10vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1.61vh + 2vmin);
+  color: white;
+}
+
+.menu-opt {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.selected {
+  font-weight: 700;
+  color: #ED6663;
+}
+
+.menu-opt:after {
+  content: "";
+  position: absolute;
+  background-color: #ED6663;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.menu-opt:hover {
+  color: #ED6663;
+}
+
+.menu-opt:hover:after {
+  width: 100%;
+}
